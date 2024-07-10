@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="landingstyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+
+</head>
+<body>
+  <div class="main">
+    <div class="top">
+      <img src="https://icon-library.com/images/icon-car-png/icon-car-png-16.jpg" alt="logo">
+      <div class="catego">Categories</div>
+      <div class="models">Models</div>
+      <div class="contact">Contact Us</div>
+      <input type="text" placeholder="Search" id="search"> 
+      <div class="login">Login</div> 
+    </div>
+    <div class="sidebar">
+      <h6>Privacy Policy</h6>
+      <h6>Terms & Condiitons</h6>
+      <i class="ri-instagram-line"></i>
+      <i class="ri-twitter-x-line"></i>
+      <i class="ri-facebook-circle-fill"></i>
+    </div>
+    <div class="content">
+      <h1>Model Name</h1>
+      <div class="model-details">
+        <h2>Features</h2>
+        <p>Leather seats<br>Sunroof/moonroof<br>Heated seats<br>Backup camera<br>Navigation system<br>Bluetooth<br>Remote start<br>Blind spot monitoring<br>Third-row seating<br>Apple CarPlay/Android Auto</p>
+      </div>
+      
+    </div>    
+  </div>
+</body>
+</html>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+  font-family: "Poppins",sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html body{
+  height: 100%;
+  width: 100%;
+}
+.main{
+  height: 100%;
+  width: 100%;
+
+}
+.sidebar{
+  min-height: 92vh;
+  width: 10%;
+  display: inline-block;
+  position: relative;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: flex-start;
+  align-items: center;
+  background-image: url(https://wallpaperaccess.com/full/862204.png);
+  background-size: cover;
+}
+
+.top{
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(https://images.fineartamerica.com/images-medium-large-5/racing-clouds-tracy-salava.jpg);
+  background-size: cover;
+}
+img{
+  max-height: 10vh;
+  width: 152px;
+}
+.top .login{
+  height: 40px;
+  width: 150px;
+  background-color: rgba(255, 60, 0, 0.625);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  background-image: url(https://icon-library.com/images/person-icon/person-icon-12.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.login:hover{
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.597);
+}
+#search{
+  height: 40px;
+  width: 300px;
+  border-radius: 20px;
+  padding-left: 40px;
+  background-image: url(https://www.freeiconspng.com/uploads/search-icon-png-8.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  border: 2px solid rgba(0, 0, 0, 0.136);
+}
+.content{
+  width: 90%;
+  min-height: 92vh;
+  background-image: url(http://getwallpapers.com/wallpaper/full/7/2/9/819195-widescreen-cool-car-wallpapers-for-desktop-1920x1080-for-hd.jpg);
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  position: absolute;
+  top: 10vh;
+  left: 10%;
+  align-content: center;
+}
+.model-details{
+  border: 2px solid rgba(0, 0, 0, 0.152);
+  border-radius: 20px;
+  width: 20%;
+  margin-left: 10%;
+  line-height: 30px;
+  text-align: center;
+  padding: 10px;
+}
+.model-details:hover{
+  box-shadow: 2px 2px 10px black;
+  font-weight: bold;
+}
+i:hover{
+  box-shadow: 2px 2px 10px black;
+  border-radius: 5px;
+}
+p{
+  font-size: 15px;
+}
+i,h6{
+  margin: 20px;
+}
+i{
+  font-size: 32px;
+}
+h1{
+  text-align: end;
+  margin-right: 10%;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.564);
+}
+h2{
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.564);
+}
+img{
+  opacity: 0.4;
+}
+
+@media(max-width:1060px) and (min-width:900px){
+  .model-details{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+  }
+
+}
+
+
+@media(max-width:900px) and (min-width:860px){
+  .model-details{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+  }
+  .top{
+    display: flex;
+    flex-direction: row;
+  }
+  
+}
+@media(max-width:859px) and (min-width:785px) {
+  .contact{
+    display:none;
+  }
+  .model-details{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+  }
+  
+}
+@media(max-width:785px) and (min-width:710px){
+  .models,  .contact{
+    display: none;
+  }
+  .model-details{
+    width: 70%;
+    height: 70%;
+  }
+
+}
+
+@media(max-width:710px)and (min-width:609px){
+  .model-details{
+    width: 70%;
+    height: 70%;
+  }
+  .models,  .contact, .catego{
+    display: none;
+  }
+
+}
+
+@media(max-width:609px) and (min-width:509px){
+  .model-details{
+    width: 70%;
+    height: 70%;
+  }
+  #search{
+    width: 200px ;
+  }
+  .models,  .contact, .catego{
+    display: none;
+  }
+  .login{
+    width: 100px;
+    font-weight: 400px;
+  }
+
+}
+
+@media(max-width:509px) and (min-width:345px){
+  .model-details{
+    width: 70%;
+    height: 70%;
+  }
+  .models,  .contact, .catego{
+    display: none;
+  }
+  .login{
+    width: 80px;
+    font-weight: 400px;
+  }
+  h6{
+    font-size: 9px ;
+  }
+  #search{
+    width: 180px;
+  }
+
+}
+@media(min-width:345px) and (max-width:430px){
+  .top .login{
+    background-image: none;
+  }
+}
+
